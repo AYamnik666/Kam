@@ -16,7 +16,7 @@ class Navbar extends React.Component{
 			<div className='item'> 
 			<a>Music</a>
 				</div>
-				<div>
+				<div className='item'>
 			<a>Settinngs</a>
 				</div>
 		</nav>
