@@ -10,18 +10,6 @@
 
 
 
-.nav{
-  grid-area: n;
-  background-color: rgb(176, 177, 177);
-
-}
-
-.content{
-  grid-area: c;
-  background-color: rgb(77, 78, 77);
-  
-}
-
 .content img{
   width: 100%;
   height: 200px;
