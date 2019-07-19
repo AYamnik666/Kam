@@ -1,9 +1,10 @@
 import React from 'react';
-import './Profile.css';
+import s from './Profile.module.css';
+
 class Profile extends React.Component{
     render(){
         return (
-            <div className='content'>
+            <div className={s.content}>
 			<div>
 			<img src='http://www.baltana.com/files/wallpapers-4/Rain-Background-Best-Wallpaper-14520.jpg'></img>
 			</div>
@@ -20,14 +21,14 @@ class Profile extends React.Component{
 		<div>
 			New post
 		</div>
-		<div className='posts'>
-				<div className='item'>
+		<div className={s.posts}>
+				<div className={s.item}>
 				post 1
 			</div>
-					<div className='item'>
+					<div className={s.item}>
 					post 2
 				</div>
-						<div className='item'>
+						<div className={s.item}>
 						post 3
 					</div></div>
 					</div>
