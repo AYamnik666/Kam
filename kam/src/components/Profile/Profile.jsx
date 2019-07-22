@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Profile.module.css';
-
+import MyPosts from './MyPosts/MyPosts';
 class Profile extends React.Component{
     render(){
         return (
@@ -15,23 +15,9 @@ class Profile extends React.Component{
 			<div>
 			ava + description
 		</div>
-		<div>
-			My post
-		</div>
-		<div>
-			New post
-		</div>
-		<div className={s.posts}>
-				<div className={s.item}>
-				post 1
-			</div>
-					<div className={s.item}>
-					post 2
-				</div>
-						<div className={s.item}>
-						post 3
-					</div></div>
-					</div>
+<MyPosts />
+</div>
+				
         )
 
         }
