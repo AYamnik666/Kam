@@ -7,8 +7,9 @@ let s ={
 	'item': 'Navbar_item__3qaF3'
 }
 */
-class Navbar extends React.Component{
-    render(){
+
+const Navbar = () =>{  
+
         return (
             <nav className={s.nav}>
 			<div className={s.item}>
@@ -31,6 +32,6 @@ class Navbar extends React.Component{
 
         }
     
-}
+
 
 export default Navbar;
