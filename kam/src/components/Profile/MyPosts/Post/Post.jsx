@@ -7,7 +7,7 @@ const Post = (props) => {
             	<img src='https://pixelbox.ru/wp-content/uploads/2018/02/tumblr_ofqybrbmf21rpwm80o1_250.jpg' />
         {props.message}
         <div>
-<span> like </span>
+<span> countLike= {props.like} </span>
             </div>
             </div>
     )
