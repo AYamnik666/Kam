@@ -2,31 +2,31 @@ import React from 'react';
 import s from './MyPosts.module.css';
 import Post from './Post/Post';
 
-class MyPosts extends React.Component{
-    render(){
+
+const MyPosts = () => {
+ 
         return (
-     <div>
+     
 		<div>
 			My post
-		</div>
 		<div>
+		
 			<textarea> </textarea>
 			<button>Add post</button>>
 			<button>Remove</button>>
 		</div>
 		<div className={s.posts}>
-				<Post />
-				<Post />
-				<Post />
-				<Post />
-				<Post />
-				<Post />
+
+				<Post message='Hi? how are you?' />
+				<Post message="It`s my first post" />
+			
 					</div>
 					</div>
+				
         )
 
         }
     
-}
+
 
 export default MyPosts;

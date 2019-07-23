@@ -1,8 +1,9 @@
 import React from 'react';
 import s from './Profile.module.css';
 import MyPosts from './MyPosts/MyPosts';
-class Profile extends React.Component{
-    render(){
+
+const Profile = () => {
+
         return (
             <div className={s.content}>
 			<div>
@@ -22,6 +23,6 @@ class Profile extends React.Component{
 
         }
     
-}
+
 
 export default Profile;
