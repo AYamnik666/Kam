@@ -5,7 +5,7 @@ import MyPosts from './MyPosts/MyPosts';
 const Profile = () => {
 
         return (
-            <div className={s.content}>
+            <div>
 			<div>
 			<img src='http://www.baltana.com/files/wallpapers-4/Rain-Background-Best-Wallpaper-14520.jpg'></img>
 			</div>
