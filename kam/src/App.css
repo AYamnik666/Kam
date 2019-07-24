@@ -20,3 +20,15 @@
   height: auto;
 }
 
+.app-wrapper-content{
+  
+    grid-area: c;
+    background-color: rgb(77, 78, 77);
+    
+  
+}
+
+.app-wrapper-content img{
+  width: 100%;
+  height: 200px;
+}
