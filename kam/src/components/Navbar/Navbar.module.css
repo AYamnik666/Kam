@@ -2,11 +2,12 @@
 .nav{
     grid-area: n;
     background-color: rgb(176, 177, 177);
-  
+  padding: 20px;
   }
   
   .item a{
       color: white;
+      text-decoration: none;
   }
 
 
