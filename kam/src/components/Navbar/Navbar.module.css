@@ -5,10 +5,11 @@
   
   }
   
-  .item{
+  .item a{
       color: white;
   }
 
-  .item.active{
-      color: gold;
-  }
+
+  .item a.activeLink {
+    color: gold;
+}
