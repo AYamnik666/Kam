@@ -8,13 +8,16 @@ const MyPosts = (props) => {
  
         return (
      
+		<div className={s.postsBlock}>
+	<h3> My posts</h3>
 		<div>
-			My post
 		<div>
-		
 			<textarea> </textarea>
-			<button>Add post</button>>
-			<button>Remove</button>>
+			</div>
+			<div>
+			<button>Add post</button>
+			</div>
+			
 		</div>
 		<div className={s.posts}>
 
