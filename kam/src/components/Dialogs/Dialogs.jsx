@@ -13,12 +13,13 @@ const Dialogs = (props) =>{
                     <div className={s.dialog}>Meth</div>
                     <div className={s.dialog}>Poul</div>
                 </div>
-            </div>
-            <div className={s.messages}>
+                <div className={s.messages}>
                 <div className={s.message}>Hi</div>
                 <div className={s.message}>How are you?</div>
                 <div className={s.message}>Yo</div>
             </div>
+            </div>
+
         </div>
     )
 }
