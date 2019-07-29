@@ -23,28 +23,30 @@ let dialogsData=[
     {    id:3,    name: 'Lola' },
     {    id:4,    name: 'Mary' },
     {    id:5,    name: 'Meth' },
-    {    id:6,    name: 'Liza' },
+    {    id:6,    name: 'Liza' }
 ]
 
+let messagesData=[
+    {id:1, message:'wwww'},
+    {id:2, message:'Hi'},
+    {id:3, message:'How are you?'},
+    {id:4, message:'Yo'}
+]
 
 
     return (
         <div>
             <div className={s.dialogs}>
                 <div className={s.dialogItems}>
-                    <DialogItem name="Dima" id="1" />
-                    <DialogItem name="Bred" id="2" />
-                    <DialogItem name="Lola" id="3" />
-                    <DialogItem name="Mary" id="4" />
-                    <DialogItem name="Meth" id="5" />
-                    <DialogItem name="Liza" id="6" />
+                    <DialogItem name={dialogsData[0].name} id={dialogsData[0].id} />
+                    <DialogItem name={dialogsData[1].name} id={dialogsData[1].id} />
+
 
                 </div>
                 <div className={s.message}>
-                <Message message='wwww'/>
-                <Message message='Hi'/>
-                <Message message='How are you?'/>
-                <Message message='Yo'/>
+                <Message message={messagesData[0].message}/>
+                <Message message={messagesData[1].message}/>
+             
             </div>
             </div>
 
