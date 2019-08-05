@@ -8,8 +8,6 @@ const ProfileInfo = () => {
 			<div>
 			<img src='http://www.baltana.com/files/wallpapers-4/Rain-Background-Best-Wallpaper-14520.jpg'></img>
 			</div>
-
-		
 			<div className={s.descriptionClock}>
 			ava + description
 		</div>
