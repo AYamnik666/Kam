@@ -9,7 +9,7 @@ import Music from './components/Music/Music';
 import News from './components/News/News';
 import Settings from './components/Settings/Settings';
 import {BrowserRouter, Route} from 'react-router-dom';
-import { addPost } from './Redux/state';
+import  store from './Redux/state';
 
 
 
@@ -36,7 +36,7 @@ const App = (props) => {
 <Route path='/dialogs' render={() => <Dialogs state={props.state.dialogsPage}  messages={props.state.dialogsPage} />} />
 <Route path='/profile' render={() => <Profile
  ProfilePage={props.state.profilePage} 
- addPost={addPost} 
+ addPost={store.addPost} 
  updateNewPostText={props.updateNewPostText}
  />} />
 
