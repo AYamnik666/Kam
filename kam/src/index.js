@@ -9,20 +9,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
 
 //addPost('QQQQQQQQQQQQQWWWWWWWWWWWWWWEEEEEEEEEEEEEEEEEE');
 
- let rerenderEntireTree = ()=>{
+ let rerenderEntireTree = (state)=>{
 
-ReactDOM.render(<App state={store.getState()} addPost={store.addPost } updateNewPostText={store.updateNewPostText}/>,
+ReactDOM.render(
+<BrowserRouter>
+<App state={state} addPost={store.addPost.bind(store)} updateNewPostText={store.updateNewPostText.bind(store)}/>
+</BrowserRouter>,
+
      document.getElementById('root'));
 
 }
-
-
-
-
-
 
 
 rerenderEntireTree(store.getState());

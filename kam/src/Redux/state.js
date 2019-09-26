@@ -8,9 +8,9 @@ let store = {
         {id: 2, message:'Tralala', likesCount:11}],
         newPostText: 'zzzzzzzzzzzzzzzzzzzz'
     },
-    
+
         dialogsPage:{
-            dialogs: [ {    id:1,    name: 'Dima' }, 
+            dialogs: [ {    id:1,    name: 'Dima' },
             {    id:2,    name: 'Bred' },
             {    id:3,    name: 'Lola' },
             {    id:4,    name: 'Mary' },
@@ -21,10 +21,11 @@ let store = {
         {id:3, message:'How are you?'},
         {id:4, message:'Yo'}]
     }
-    
+
     },
 
     getState () {
+        debugger;
         return this._state;
     },
 
@@ -32,23 +33,23 @@ let store = {
         console.log('state has been chenged');
     },
 
-    addPost  (postMessage) {
-    
+    addPost  () {
+    debugger;
         let newPost ={
             id: 5,
             message: this._state.profilePage.newPostText,
             likesCount: 0
         };
-    
+
         this._state.profilePage.posts.push(newPost);
-        
-        this._state.state.profilePage.newPostText='';
+
+        this._state.profilePage.newPostText='';
         this._callSubscriber(this._state);
     },
 
     updateNewPostText  (newText) {
-    
- 
+
+
         this._state.profilePage.newPostText= newText;
         this._callSubscriber(this._state);
     },
@@ -56,7 +57,7 @@ let store = {
     subscribe  (observer) {
         this._callSubscriber = observer;
         }
-    
+
 
 };
 
