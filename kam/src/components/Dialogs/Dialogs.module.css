@@ -1,4 +1,4 @@
-    
+
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
@@ -8,11 +8,11 @@
 .dialogItems .dialog{
     padding: 10px;
     color: white;
-    
+
 }
 
 .dialogItems .active{
-    color: gold;
+    color: rgb(97, 97, 99);
 }
 
 

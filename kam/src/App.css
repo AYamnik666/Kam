@@ -21,11 +21,11 @@
 }
 
 .app-wrapper-content{
-  
+
     grid-area: c;
-    background-color: rgb(250, 234, 234);
-    
-  
+    background-color: rgb(228, 228, 228);
+
+
 }
 
 .app-wrapper-content img{
