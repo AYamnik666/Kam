@@ -33,7 +33,7 @@ const App = (props) => {
 <Route exact path='/dialogs' component={Dialogs} />
 <Route path='/profile' component={Profile} />*/}
 
-<Route path='/dialogs' render={() => <Dialogs state={props.state.dialogsPage}  messages={props.state.dialogsPage} />} />
+<Route path='/dialogs' render={() => <Dialogs store={props.store}  messages={props.state.dialogsPage} />} />
 <Route path='/profile' render={() => <Profile
  ProfilePage={props.state.profilePage}
  dispatch={props.dispatch}
