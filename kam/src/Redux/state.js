@@ -4,7 +4,7 @@ const ADD_POST ='ADD-POST';
 
 const UPDATE_NEWPOST_TEXT ='UPDATE-NEWPOST-TEXT';
 const UPDATE_NEW_MESSAGE_BODY = 'UPDATE-NEW-MESSAGE-BODY';
-const SEND_MESSAGE= 'SEND-MESSGE';
+const SEND_MESSAGE= 'SEND-MESSAGE';
 let store = {
 
      _state: {
@@ -63,7 +63,7 @@ let store = {
         }
 
         else if (action.type===UPDATE_NEW_MESSAGE_BODY){
-            this._state.dialogsPage.newMessageBody=action.Body;
+            this._state.dialogsPage.newMessageBody=action.body;
 
             this._callSubscriber(this._state);
         }
@@ -71,7 +71,7 @@ let store = {
         else if (action.type===SEND_MESSAGE){
            let body= this._state.dialogsPage.newMessageBody;
            this._state.dialogsPage.newMessageBody='';
-           this._state.dialogsPage.messages.push(  {id:7, message:body});
+           this._state.dialogsPage.messages.push(  {id:7, message: body});
             this._callSubscriber(this._state);
         }
 

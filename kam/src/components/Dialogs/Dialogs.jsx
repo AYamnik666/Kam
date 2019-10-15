@@ -41,7 +41,7 @@ let onNewMessageChange = (e) => {
                         <textarea placeholder='Enter your message' value= {newMessageBody} onChange= {onNewMessageChange} > </textarea>
                     </div>
                     <div>
-                            <button onClick={{onSendMessageClick}}>Send</button>
+                        <button onClick={onSendMessageClick}>Send</button>
                     </div>
                 </div>
             </div>
