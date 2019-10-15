@@ -1,7 +1,7 @@
 
-import DialogItem from './../components/Dialogs/DialogItem/DialogItem';
+import DialogItem from '../components/Dialogs/DialogItem/DialogItem';
 import profileReduscer from './profile-reducer';
-import sidebarReduscer from './sidebar-reducer copy';
+import sidebarReduscer from './sidebar-reducer';
 import dialogsReduscer from './dialogs-reducer';
 
 

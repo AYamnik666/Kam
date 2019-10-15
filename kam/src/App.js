@@ -9,12 +9,11 @@ import Music from './components/Music/Music';
 import News from './components/News/News';
 import Settings from './components/Settings/Settings';
 import {BrowserRouter, Route} from 'react-router-dom';
-import { addPost } from './Redux/state';
+import { addPost } from './Redux/store';
 
 
 
 const App = (props) => {
-
 
 
     return (
