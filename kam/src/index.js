@@ -5,25 +5,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
+import {StoreContext, Provider} from './StoreContext';
 
 //addPost('QQQQQQQQQQQQQWWWWWWWWWWWWWWEEEEEEEEEEEEEEEEEE');
 
- let rerenderEntireTree = (state)=>{
+ let rerenderEntireTree = ()=>{
 ReactDOM.render(
 <BrowserRouter>
-<App state={state} dispatch={store.dispatch.bind(store)} store={store} />
+<Provider store={store}>
+<App />
+</Provider>
 </BrowserRouter>,
-
      document.getElementById('root'));
-
 }
 
-
-rerenderEntireTree(store.getState());
+rerenderEntireTree();
 
 store.subscribe (()=>{
-     let state=store.getState();
-     rerenderEntireTree(state);
+     rerenderEntireTree();
 });
 
 // If you want your app to work offline and load faster, you can change
