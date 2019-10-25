@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 
 import Sidebar from '../Sidebar/Sidebar';
 
-const Navbar = () =>{  
+const Navbar = () =>{
 
         return (
 			<div>
@@ -18,7 +18,12 @@ const Navbar = () =>{
 			<div className={s.item}>
 			<NavLink to="/news" activeClassName={s.activeLink} >News</NavLink>
 				</div>
-			<div className={s.item}> 
+
+				<div className={s.item}>
+			<NavLink to="/users" activeClassName={s.activeLink} >Users</NavLink>
+				</div>
+
+			<div className={s.item}>
 			<NavLink to="/music" activeClassName={s.activeLink} >Music</NavLink>
 				</div>
 				<div className={s.item}>
@@ -30,7 +35,7 @@ const Navbar = () =>{
         )
 
         }
-    
+
 
 
 export default Navbar;
