@@ -9,20 +9,14 @@ import Music from './components/Music/Music';
 import News from './components/News/News';
 import Settings from './components/Settings/Settings';
 import {BrowserRouter, Route} from 'react-router-dom';
-import { addPost } from './Redux/store';
-
-
+import UsersContainer from './components/Users/UsersContainer';
 
 const App = (props) => {
-
-
     return (
 <BrowserRouter>
 	<div className='app-wrapper'>
 			<Header />
 			<Navbar />
-
-
 		<div className='app-wrapper-content'>
 
 <Route path='/news' component={News} />
@@ -38,8 +32,8 @@ const App = (props) => {
                     <Route path='/profile'
                            render={ () => <Profile /> }/>
 
-
-
+<Route path='/Users'
+                           render={ () => <UsersContainer /> }/>
 		</div>
 	</div>
 
