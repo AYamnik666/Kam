@@ -3,3 +3,14 @@
     height: 100px;
 }
 
+.selectedPage {
+    font-weight: bold;
+    color: red;
+
+
+}
+
+.numberList{
+    cursor: pointer;
+margin-right: 20px;
+}
