@@ -1,3 +1,6 @@
 npx create react-app my_project
 redux 
 создать state
+
+
+https://loading.io/
