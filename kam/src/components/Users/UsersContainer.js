@@ -9,7 +9,6 @@ import {
     unfollow,
     toggleFollowingProgress,
     getUsers} from '../../Redux/users-reducer';
-import * as axios from "axios";
 import Users from "./Users";
 
 import preloader from '../../assets/images/preloader.svg';
